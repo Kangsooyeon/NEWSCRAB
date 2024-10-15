@@ -40,8 +40,8 @@ const ArticlePage: React.FC = () => {
         // createdAt을 기준으로 최신 순으로 정렬
         const sortedData = data.data.articleList.sort((a, b) => {
           return (
-            new Date(b.scrapResponseDto.createdAt).getTime() -
-            new Date(a.scrapResponseDto.createdAt).getTime()
+            new Date(b.scrapResponseDto.updatedAt).getTime() -
+            new Date(a.scrapResponseDto.updatedAt).getTime()
           );
         });
         setArticles(sortedData); // 정렬된 데이터를 상태로 설정

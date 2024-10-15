@@ -128,7 +128,7 @@ const ArticleList: React.FC<ArticleListProps> = ({ articles }) => {
               <StyledTd>{article.name}</StyledTd>
               <StyledTd>{article.likeCnt}</StyledTd>
               <StyledTd>
-                {formatDate(article.scrapResponseDto.createdAt)}
+                {formatDate(article.scrapResponseDto.updatedAt)}
               </StyledTd>
             </StyledTr>
           ))}
