@@ -190,7 +190,7 @@ const HotSection: React.FC = () => {
                   <InfoRow>
                     <span>{article.scrapResponseDto.newsCompany}</span>
                     <span>
-                      {formatDate(article.scrapResponseDto.createdAt)}
+                      {formatDate(article.scrapResponseDto.updatedAt)}
                     </span>
                   </InfoRow>
                 </HorizontalWrapper>
